@@ -6,8 +6,7 @@ using namespace std;
 
 // Simple function to print rules !
 void rules() {
-    cout << "Rules are simple : The game is going to choose a number and you have to find it !\nNumber are choosen between 1 and 100 !\Good Luck !" << endl;
-
+    cout << "Rules are simple : The game is going to choose a number and you have to find it !\nNumber are choosen between 1 and 100 !\nGood Luck !\n" << endl;
 }
 
 int main()
