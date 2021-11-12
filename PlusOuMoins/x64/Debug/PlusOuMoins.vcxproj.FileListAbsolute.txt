@@ -1,1 +1,2 @@
 C:\Users\OFurghieri\source\repos\PlusOuMoins\x64\Debug\PlusOuMoins.exe
+C:\Users\OFurghieri\Documents\Perso\C++Learning\PlusOuMoins\x64\Debug\PlusOuMoins.exe
