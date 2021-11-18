@@ -14,8 +14,10 @@ int main()
     srand((unsigned)time(0));
     int secretValue;
     int userAnswer;
-    cout << "Shall We Play A Game v0.4\nAdded Functionnality :\n\t- Rules display !" << endl;
-    cout << "Previous version :\n\t v0.3 : Now with random number selection !\n\t v0.2 : Added a loop to submit multiple answer !\n\t v0.1 : First version\n" << endl;
+    int maxGuess(10);
+
+    cout << "Shall We Play A Game v0.5\nAdded Functionnality :\n\t- Limited number of guess !" << endl;
+    cout << "Previous version :\n\tv0.4 : - Rules display !\n\t v0.3 : Now with random number selection !\n\t v0.2 : Added a loop to submit multiple answer !\n\t v0.1 : First version\n" << endl;
 
     rules();
 
@@ -32,9 +34,16 @@ int main()
             cout << "Too small !\n" << endl;
         }
 
-    }while(userAnswer != secretValue);
+        maxGuess -= 1;
 
-    cout << "You rock ! You found the correct value !" << endl;
+    }while((maxGuess > 0) && (userAnswer != secretValue));
+
+    if (maxGuess != 0){
+        cout << "You rock ! You found the correct value !" << endl;
+    }
+    else {
+        cout << "You loose :( Try again ;)" << endl;
+    }
 
     return 0;
 }
